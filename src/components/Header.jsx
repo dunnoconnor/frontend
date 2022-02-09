@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header(props) {
     return (
-        <div>
+        <div className='Header'>
            <Link className='link' to='/'><h3>View Sauces</h3></Link>
            <Link className='link'to='/new'><h3>Add New Sauce</h3></Link>
            {props.sauces.map((sauce) => {

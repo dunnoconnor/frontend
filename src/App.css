@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  margin: auto;
+}
+
+/* set rules for flex container */
+.SauceList {
+  /* allows flexbox */
+  display: flex;
+  /* orient flexbox into rows */
+  flex-direction: row;
+  /* If you run out of room, wrap around to a new row */
+  flex-wrap: wrap;
+  /* align items along flex-direction */
+  align-items: center;
+  /* justifies content along the other axis */
+  justify-content: center;
+
+  width:90vw;
+}
+
+/* set rules for items in flex container */
+.Sauce {
+  /* create space around component */
+  margin: 2vw;
+  /* creates space within component, but around its contents */
+  padding: 2vw;
+  /* set height and width */
+  height: auto;
+  width: 300px;
+}
+
+/* rule for all img elements */
+img {
+  width : auto;
+  height: 300px;
+}
+
+
+.Header {
+    /* allows flexbox */
+    display: flex;
+    /* orient flexbox into rows */
+    flex-direction: row;
+    /* If you run out of room, wrap around to a new row */
+    flex-wrap: wrap;
+    /* align items along flex-direction */
+    align-items: center;
+    /* justifies content along the other axis */
+    justify-content: center;
+}
+
+.link {
+    /* create space around component */
+    margin: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+/* set more specific rules to override my style on a large screen */
+@media only screen and (min-width: 700px){
+
+  img {
+    width: auto;
+    height: 400px;
+  }
+
+  .SauceList {
+    width: 80vw;
+  }
+  
+}

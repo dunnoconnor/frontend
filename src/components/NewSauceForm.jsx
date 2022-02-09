@@ -37,6 +37,7 @@ function NewSauceForm(props) {
                 image: formState.image
             })
         })
+        window.location.assign('/dogs')
     }
 
 
